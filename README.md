@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/87af9951-7361-4b40-af6c-f4d9b51dc587/deploy-status)](https://app.netlify.com/sites/quizzical-brattain-85de84/deploys)
+
 # circlebar-website
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.3.

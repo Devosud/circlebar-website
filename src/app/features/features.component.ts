@@ -11,7 +11,7 @@ export class FeaturesComponent implements AfterViewInit {
 
   public features: any[];
 
-  constructor(private i18nService: I18nService) {
+  constructor(public i18nService: I18nService) {
     this.features = [
       {
         name: 'bar-selection',

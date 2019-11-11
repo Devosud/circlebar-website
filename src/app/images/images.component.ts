@@ -16,7 +16,7 @@ export class ImagesComponent implements OnInit {
   public selectedImageTitle: string;
   public selectedImageDescription: string;
 
-  constructor(private i18nService: I18nService) {
+  constructor(public i18nService: I18nService) {
     this.images = ['account', 'bar-commu', 'bar-info', 'bar-services', 'discover'];
   }
 

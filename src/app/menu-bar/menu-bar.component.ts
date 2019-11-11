@@ -10,9 +10,9 @@ declare var $: any;
 })
 export class MenuBarComponent implements OnInit {
 
-  private firstLookTitle: string;
-  private featuresTitle: string;
-  private imagesTitle: string;
+  public firstLookTitle: string;
+  public featuresTitle: string;
+  public imagesTitle: string;
 
   constructor(private router: Router) {
     this.router = router;

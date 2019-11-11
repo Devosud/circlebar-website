@@ -9,7 +9,7 @@ declare var $: any;
 })
 export class FirstLookComponent implements OnInit {
 
-  constructor(private i18nService: I18nService) {
+  constructor(public i18nService: I18nService) {
     this.i18nService = i18nService;
   }
 
