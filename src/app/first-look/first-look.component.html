@@ -1,12 +1,6 @@
 <div id="first-look">
   <div id="first-look-grid" class="ui stackable grid">
     <div class="center aligned row">
-      <div id="first-look-image" class="nine wide column">
-        <img
-          class="ui middle aligned massive image"
-          src="../../assets/first-page.png"
-        />
-      </div>
       <div id="first-look-description" class="seven wide column">
         <h1 class="ui header">
           {{ i18nService.getByKey("first-look.title", "fr") }}
@@ -14,6 +8,12 @@
         <h3 class="ui header ">
           {{ i18nService.getByKey("first-look.description", "fr") }}
         </h3>
+      </div>
+      <div id="first-look-image" class="nine wide column">
+        <img
+          class="ui middle aligned massive image"
+          src="../../assets/first-page.png"
+        />
       </div>
     </div>
   </div>
