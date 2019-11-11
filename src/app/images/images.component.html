@@ -1,0 +1,31 @@
+<div id="images">
+  <div id="images-grid" class="ui stackable grid">
+    <div class="row">
+      <div id="first-look-description" class="nine wide column">
+        <h1 class="ui header">
+          {{ selectedImageTitle }}
+        </h1>
+        <div class="ui segment">
+          <h3 class="ui header">
+            {{ selectedImageDescription }}
+          </h3>
+        </div>
+        <div class="ui pagination menu">
+          <a
+            *ngFor="let image of images; let i = index"
+            (click)="setImage(i)"
+            class="item"
+            [ngClass]="{ active: i === selectedImageIndex }"
+          >
+            {{ i + 1 }}
+          </a>
+        </div>
+      </div>
+      <div id="first-look-image" class="seven wide center aligned column">
+        <div class="ui middle aligned large image">
+          <img id="selected-image" class="" [src]="selectedImageLink" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,65 @@
+<div class="menu-bar">
+  <div id="wide-menu" class="ui equal width grid">
+    <div class="column">
+      <a class="ui medium image" routerLink="/">
+        <img src="../../assets/logo.png" />
+      </a>
+    </div>
+    <div class="column">
+      <div class="ui two item secondary pointing menu">
+        <a
+          class="item"
+          routerLink="/features"
+          [ngClass]="{ active: selectedPage === 'features' }"
+        >
+          <h1>{{ featuresTitle }}</h1></a
+        >
+        <a
+          class="item"
+          routerLink="/images"
+          [ngClass]="{ active: selectedPage === 'images' }"
+        >
+          <h1>{{ imagesTitle }}</h1></a
+        >
+      </div>
+    </div>
+  </div>
+  <div id="mobile-menu" class="ui equal width right aligned grid">
+    <div class="column">
+      <a class="ui medium image" routerLink="/">
+        <img src="../../assets/logo.png" />
+      </a>
+    </div>
+    <div class="column">
+      <div class="ui top right pointing dropdown icon item">
+        <i class="bars large icon"></i>
+        <div class="menu">
+          <a
+            class="item"
+            routerLink="/features"
+            [ngClass]="{ active: selectedPage === 'features' }"
+          >
+            {{ featuresTitle }}</a
+          >
+          <a
+            class="item"
+            routerLink="/images"
+            [ngClass]="{ active: selectedPage === 'images' }"
+          >
+            {{ imagesTitle }}</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="three wide column">
+    <div *ngIf="false" class="ui buttons">
+      <button class="ui button">
+        FR
+      </button>
+      <button class="ui button">
+        EN
+      </button>
+    </div>
+  </div>
+</div>

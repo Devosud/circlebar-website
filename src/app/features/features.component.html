@@ -1,0 +1,26 @@
+<div id="features">
+  <div id="features-grid" class="ui stackable centered grid">
+    <div
+      *ngFor="let feature of features; let index = index"
+      id="{{ feature.name }}"
+      class="six wide column"
+    >
+      <h1 class="ui center aligned icon header">
+        <i class="{{ feature.icon }} icon"></i>
+        <div class="content">
+          {{
+            i18nService.getByKey("features." + feature.name + ".title", "fr")
+          }}
+          <div class="sub header">
+            {{
+              i18nService.getByKey(
+                "features." + feature.name + ".description",
+                "fr"
+              )
+            }}
+          </div>
+        </div>
+      </h1>
+    </div>
+  </div>
+</div>

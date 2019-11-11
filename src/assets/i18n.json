@@ -1,0 +1,34 @@
+{
+  "fr": {
+    "ui.first-look.title": "CircleBar,",
+    "ui.first-look.description": "la premier réseau social 100% bar",
+    "ui.features.bar-selection.title": "Une sélection unique",
+    "ui.features.bar-selection.description": "Accède à une large sélection de bar situés dans ta ville",
+    "ui.features.promotions.title": "Des promotions",
+    "ui.features.promotions.description": "Reçois des promotions exclusives de tes bars favoris",
+    "ui.features.rendez-vous.title": "Redez-vous avec tes potes",
+    "ui.features.rendez-vous.description": "Organise des soirées directement sur l'application",
+    "ui.features.community.title": "Une grande communauté",
+    "ui.features.community.description": "Rejoins une commaunauté active, toujours prête à proposer des redez-vous pour animer ta soirée",
+    "ui.features.be-notify.title": "Des notifs en temps réels",
+    "ui.features.be-notify.description": "Sois notifié en temps réel des happy-hours et desd horraires d'ouverture de n'importe quel bar",
+    "ui.features.favorite-bars.title": "Les favoris",
+    "ui.features.favorite-bars.description":"Ajoute des bars préféré à ta liste de favoris pour pouvoir les retrouver facilement"
+  },
+  "en": {
+    "ui.first-look.title": "Title_EN",
+    "ui.first-look.description": "Description_EN",
+    "ui.features.bar-selection.title": "EN",
+    "ui.features.bar-selection.description": "EN",
+    "ui.features.promotions.title": "EN",
+    "ui.features.promotions.description": "EN",
+    "ui.features.rendez-vous.title": "EN",
+    "ui.features.rendez-vous.description": "EN",
+    "ui.features.community.title": "EN",
+    "ui.features.community.description": "EN",
+    "ui.features.be-notify.title": "EN",
+    "ui.features.be-notify.description": "EN",
+    "ui.features.favorite-bars.title": "EN",
+    "ui.features.favorite-bars.description":"EN"
+  }
+}
