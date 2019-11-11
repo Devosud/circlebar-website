@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "kaboom": {
+    "circlebar-website": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/kaboom",
+            "outputPath": "dist/circlebar-website",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -66,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "kaboom:build"
+            "browserTarget": "circlebar-website:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "kaboom:build:production"
+              "browserTarget": "circlebar-website:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "kaboom:build"
+            "browserTarget": "circlebar-website:build"
           }
         },
         "test": {
@@ -114,15 +114,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "kaboom:serve"
+            "devServerTarget": "circlebar-website:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "kaboom:serve:production"
+              "devServerTarget": "circlebar-website:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "kaboom"
+  "defaultProject": "circlebar-website"
 }
