@@ -1,14 +1,17 @@
 <div id="images">
-  <div id="images-grid" class="ui stackable grid">
+  <div id="images-grid" class="ui equal width grid">
+    <div class="right aligned column">
+      <h1 class="ui header">
+        {{ selectedImageTitle }}
+      </h1>
+    </div>
     <div class="row">
-      <div id="first-look-description" class="nine wide column">
-        <h1 class="ui header">
-          {{ selectedImageTitle }}
-        </h1>
+      <div class="right aligned column">
+
         <div class="ui segment">
-          <h3 class="ui header">
+          <p>
             {{ selectedImageDescription }}
-          </h3>
+          </p>
         </div>
         <div class="ui pagination menu">
           <a
@@ -21,10 +24,10 @@
           </a>
         </div>
       </div>
-      <div id="first-look-image" class="seven wide center aligned column">
-        <div class="ui middle aligned large image">
-          <img id="selected-image" class="" [src]="selectedImageLink" />
-        </div>
+      <div class="six wide column">
+          <div id="first-look-image" class="ui middle aligned large image">
+              <img id="selected-image" [src]="selectedImageLink" />
+            </div>
       </div>
     </div>
   </div>
