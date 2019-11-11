@@ -8,7 +8,7 @@ export class I18nService {
   private i18nData = {
     fr: {
       'ui.first-look.title': 'Circle Bar,',
-      'ui.first-look.description': 'la premier réseau social 100% bar',
+      'ui.first-look.description': 'le premier réseau social 100% bar',
       'ui.features.bar-selection.title': 'Une sélection unique',
       'ui.features.bar-selection.description': 'Accède à une large sélection de bar situés dans ta ville',
       'ui.features.promotions.title': 'Des promotions',

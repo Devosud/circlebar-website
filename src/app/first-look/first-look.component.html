@@ -1,17 +1,27 @@
 <div id="first-look">
   <div id="first-look-grid" class="ui stackable grid">
-    <div class="center aligned row">
-      <div id="first-look-description" class="seven wide column">
+    <div id="main-row" class="row">
+      <div id="first-look-description" class="right aligned seven wide column">
         <h1 class="ui header">
           {{ i18nService.getByKey("first-look.title", "fr") }}
         </h1>
-        <h3 class="ui header ">
+        <h3 class="ui header">
           {{ i18nService.getByKey("first-look.description", "fr") }}
         </h3>
+        <div id="store-links" class="ui grid">
+          <div class="row">
+            <a href="https://apple.fr">
+              <img class="ui small image" src="../../assets/app-store.png" />
+            </a>
+            <a href="https://google.fr">
+              <img class="ui small image" src="../../assets/google-play.png" />
+            </a>
+          </div>
+        </div>
       </div>
       <div id="first-look-image" class="nine wide column">
         <img
-          class="ui middle aligned massive image"
+          class="ui bottom aligned massive image"
           src="../../assets/first-page.png"
         />
       </div>
