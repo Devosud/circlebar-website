@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import * as _ from 'lodash';
+import { I18nService } from '../i18n.service';
 declare var $: any;
 
 @Component({
@@ -10,20 +11,11 @@ declare var $: any;
 })
 export class MenuBarComponent implements OnInit {
 
-  public firstLookTitle: string;
-  public featuresTitle: string;
-  public imagesTitle: string;
-
-  constructor(private router: Router) {
-    this.router = router;
-    this.firstLookTitle = 'En quelques mots';
-    this.featuresTitle = 'Fonctionnalitées';
-    this.imagesTitle = 'En image';
+  constructor(private router: Router, public i18nService: I18nService) {
   }
 
   get selectedPage() {
     if (!_.isUndefined(this.router.url)) {
-      console.log(this.router.url.replace('/', ''))
       return this.router.url.replace('/', '');
     }
   }

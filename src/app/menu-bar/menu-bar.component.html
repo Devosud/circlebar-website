@@ -12,14 +12,14 @@
           routerLink="/features"
           [ngClass]="{ active: selectedPage === 'features' }"
         >
-          <h1>{{ featuresTitle }}</h1></a
+          <h1>{{ i18nService.getByKey("nav.features", "fr") }}</h1></a
         >
         <a
           class="item"
           routerLink="/images"
           [ngClass]="{ active: selectedPage === 'images' }"
         >
-          <h1>{{ imagesTitle }}</h1></a
+          <h1>{{ i18nService.getByKey("nav.images", "fr") }}</h1></a
         >
       </div>
     </div>
@@ -39,14 +39,14 @@
             routerLink="/features"
             [ngClass]="{ active: selectedPage === 'features' }"
           >
-            {{ featuresTitle }}</a
+            {{ i18nService.getByKey("nav.features", "fr") }}</a
           >
           <a
             class="item"
             routerLink="/images"
             [ngClass]="{ active: selectedPage === 'images' }"
           >
-            {{ imagesTitle }}</a
+            {{ i18nService.getByKey("nav.images", "fr") }}</a
           >
         </div>
       </div>

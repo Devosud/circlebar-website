@@ -1,12 +1,12 @@
 <div id="images">
-  <div id="images-grid" class="ui centered equal width grid">
+  <div id="images-grid" class="ui centered grid">
     <div class="row">
-      <div class="right aligned column">
-        <div id="first-look-image" class="ui large image">
+      <div class="right aligned ten wide column">
+        <div id="first-look-image" class="ui huge image">
           <img id="selected-image" [src]="selectedImageLink" />
         </div>
       </div>
-      <div class="left aligned column">
+      <div class="left aligned six wide column">
         <div id="wide-pagination" class="ui secondary pointing pagination menu">
           <a
             *ngFor="let image of images; let i = index"
