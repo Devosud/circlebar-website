@@ -1,25 +1,49 @@
 #images {
   padding: 3em 50px;
   h1.ui.header {
-    font-size: 7vw !important;
+    font-size: 5.8rem;
   }
   h2.sub.header{
-    font-size: 3.5vw !important;
+    font-size: 3rem;
   }
   @media (min-width: 900px){
+    #mobile-title {
+      display: none;
+    }
+    #mobile-description {
+      display: none;
+    }
     #mobile-pagination {
       display: none;
     }
     #wide-pagination {
       display: inline-flex;
     }
+    #wide-title {
+      display: block;
+    }
   }
 
   @media (max-width: 900px){
+    h1.ui.header {
+      font-size: 3.7rem;
+    }
+    h2.sub.header{
+      font-size: 1.2rem;
+    }
+    #mobile-title {
+      display: flex;
+    }
+    #mobile-description {
+      display: flex;
+    }
     #mobile-pagination {
       display: inline-flex;
     }
     #wide-pagination {
+      display: none;
+    }
+    #wide-title {
       display: none;
     }
   }

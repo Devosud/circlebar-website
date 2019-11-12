@@ -1,5 +1,10 @@
 <div id="images">
-  <div id="images-grid" class="ui centered grid">
+  <div id="images-grid" class="ui grid">
+    <div id="mobile-title" class="row">
+      <h1 class="ui header">
+        {{ selectedImageTitle }}
+      </h1>
+    </div>
     <div class="row">
       <div class="right aligned ten wide column">
         <div id="first-look-image" class="ui huge image">
@@ -17,12 +22,15 @@
             {{ i + 1 }}
           </a>
         </div>
-        <h1 class="ui header">
+        <h1 id="wide-title" class="ui header">
           {{ selectedImageTitle }}
           <h2 class="sub header">
             {{ selectedImageDescription }}
           </h2>
         </h1>
+        <h2 id="mobile-description" class="sub header">
+          {{ selectedImageDescription }}
+        </h2>
       </div>
     </div>
     <div id="mobile-pagination" class="row">
