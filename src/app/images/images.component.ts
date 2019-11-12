@@ -38,6 +38,11 @@ export class ImagesComponent implements OnInit {
 
   ngOnInit() {
     this.setImage(0);
+    $('.ui.sticky')
+      .sticky({
+        context: '#images'
+      })
+      ;
   }
 
 }
