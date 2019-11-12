@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { I18nService } from '../i18n.service';
 import * as _ from 'lodash';
 declare var $: any;
@@ -37,12 +37,12 @@ export class ImagesComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.setImage(0);
     $('.ui.sticky')
       .sticky({
-        context: '#images-grid'
+        context: '#images'
       })
       ;
+    this.setImage(0);
   }
 
 }
