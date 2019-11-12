@@ -1,9 +1,30 @@
 #images {
   h1.ui.header {
-    font-size: 7em;
+    font-size: 7vw;
+  }
+  h2.sub.header {
+    font-size: 3.5vw;
   }
   p {
     font-size: 2.5em;
   }
   padding: 3em 50px;
+
+  @media (min-width: 900px){
+    #mobile-pagination {
+      display: none;
+    }
+    #wide-pagination {
+      display: flex;
+    }
+  }
+
+  @media (max-width: 900px){
+    #mobile-pagination {
+      display: flex;
+    }
+    #wide-pagination {
+      display: none;
+    }
+  }
 }

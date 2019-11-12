@@ -17,7 +17,7 @@ export class ImagesComponent implements OnInit {
   public selectedImageDescription: string;
 
   constructor(public i18nService: I18nService) {
-    this.images = ['account', 'bar-commu', 'bar-info', 'bar-services', 'discover'];
+    this.images = ['bar-info', 'bar-commu', 'bar-services', 'account', 'discover'];
   }
 
   setImage(index: number) {

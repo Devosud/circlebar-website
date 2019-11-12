@@ -1,19 +1,13 @@
 <div id="images">
-  <div id="images-grid" class="ui equal width grid">
-    <div class="right aligned column">
-      <h1 class="ui header">
-        {{ selectedImageTitle }}
-      </h1>
-    </div>
+  <div id="images-grid" class="ui centered equal width grid">
     <div class="row">
       <div class="right aligned column">
-
-        <div class="ui segment">
-          <p>
-            {{ selectedImageDescription }}
-          </p>
+        <div id="first-look-image" class="ui large image">
+          <img id="selected-image" [src]="selectedImageLink" />
         </div>
-        <div class="ui pagination menu">
+      </div>
+      <div class="left aligned column">
+        <div id="wide-pagination" class="ui secondary pointing pagination menu">
           <a
             *ngFor="let image of images; let i = index"
             (click)="setImage(i)"
@@ -23,11 +17,24 @@
             {{ i + 1 }}
           </a>
         </div>
+        <h1 class="ui header">
+          {{ selectedImageTitle }}
+          <h2 class="sub header">
+            {{ selectedImageDescription }}
+          </h2>
+        </h1>
       </div>
-      <div class="six wide column">
-          <div id="first-look-image" class="ui middle aligned large image">
-              <img id="selected-image" [src]="selectedImageLink" />
-            </div>
+    </div>
+    <div id="mobile-pagination" class="row">
+      <div class="ui secondary pointing pagination menu">
+        <a
+          *ngFor="let image of images; let i = index"
+          (click)="setImage(i)"
+          class="item"
+          [ngClass]="{ active: i === selectedImageIndex }"
+        >
+          {{ i + 1 }}
+        </a>
       </div>
     </div>
   </div>

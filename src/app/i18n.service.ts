@@ -22,16 +22,16 @@ export class I18nService {
       'Sois notifié(e) en temps réel des happy-hours et des horraires d\'ouverture de n\'importe quel bar',
       'ui.features.favorite-bars.title': 'Les favoris',
       'ui.features.favorite-bars.description': 'Ajoute tes bars préférés à ta liste de favoris pour pouvoir les retrouver facilement',
-      'ui.images.account.title': 'Compte personnel',
+      'ui.images.account.title': 'Compte',
       'ui.images.account.description':
       'Tu peux directement créer ton compte ou bien si tu préfères choisir de te connecter avec ton compte Facebook ou encore Google',
-      'ui.images.bar-commu.title': 'La communauté',
+      'ui.images.bar-commu.title': 'Communauté',
       'ui.images.bar-commu.description':
       'Tu peux regarder sur la page de ton bar préféré les soirées organisées par les autres utilisateurs',
-      'ui.images.bar-info.title': 'Infos du bar',
+      'ui.images.bar-info.title': 'Infos',
       'ui.images.bar-info.description':
       'Les infos essentielles du bar sont facilements trouvables comme sa localisation ou encore ses horraires d\'ouverture',
-      'ui.images.bar-services.title': 'Les services',
+      'ui.images.bar-services.title': 'Services',
       'ui.images.bar-services.description':
       'Un large choix de service est proposé pour par exemple de permettre de laisser un pourboir via Tip',
       'ui.images.discover.title': 'Découvrir',
