@@ -22,4 +22,22 @@
   .ui.sticky.fixed.top {
     margin-top: 3em !important;
   }
+
+  @media (min-width: 900px){
+    #no-sticky {
+      display: none;
+    }
+    #sticky {
+      display: block;
+    }
+  }
+
+  @media (max-width: 900px){
+    #no-sticky {
+      display: flex;
+    }
+    #sticky {
+      display: block;
+    }
+  }
 }

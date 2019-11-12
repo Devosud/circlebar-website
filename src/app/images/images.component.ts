@@ -40,7 +40,7 @@ export class ImagesComponent implements OnInit {
     this.setImage(0);
     $('.ui.sticky')
       .sticky({
-        context: '#images'
+        context: '#images-grid'
       })
       ;
   }
