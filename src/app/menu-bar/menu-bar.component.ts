@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import * as _ from 'lodash';
 import { I18nService } from '../i18n.service';
 declare var $: any;
+declare var require: any;
 
 @Component({
   selector: 'app-menu-bar',
@@ -10,6 +11,9 @@ declare var $: any;
   styleUrls: ['./menu-bar.component.less']
 })
 export class MenuBarComponent implements OnInit {
+
+  public googlePlay = require('../../assets/google-play.png');
+  public appStore = require('../../assets/app-store.png');
 
   constructor(private router: Router, public i18nService: I18nService) {
   }
