@@ -10,29 +10,32 @@ declare var $: any;
 })
 export class ImagesComponent implements OnInit {
 
-  public images: any[];
-  public selectedImageIndex;
+  public imageNames: any[];
+  public images: any[] = [];
+  public selectedImageIndex: number;
   public selectedImageLink: string;
   public selectedImageTitle: string;
   public selectedImageDescription: string;
 
   constructor(public i18nService: I18nService) {
-    this.images = ['bar-info', 'bar-commu', 'bar-services', 'account', 'discover'];
+    this.imageNames = ['bar-info', 'bar-commu', 'bar-services', 'account', 'discover'];
   }
 
   setImage(index: number) {
     this.setCorrectTransition(index);
     this.selectedImageIndex = index;
-    this.selectedImageLink = '../../assets/' + this.images[index] + '.png';
-    this.selectedImageTitle = this.i18nService.getByKey('images.' + this.images[index] + '.title', 'fr');
-    this.selectedImageDescription = this.i18nService.getByKey('images.' + this.images[index] + '.description', 'fr');
+    this.selectedImageLink = require('../../assets/' + this.imageNames[index] + '.png');
+    this.selectedImageTitle = this.i18nService.getByKey('images.' + this.imageNames[index] + '.title', 'fr');
+    this.selectedImageDescription = this.i18nService.getByKey('images.' + this.imageNames[index] + '.description', 'fr');
   }
 
   setCorrectTransition(index: number) {
-    if (index < this.selectedImageIndex) {
-      $('#selected-image').transition('fade left in', '900ms');
-    } else {
-      $('#selected-image').transition('fade right in', '900ms');
+    if (index !== this.selectedImageIndex) {
+      if (index < this.selectedImageIndex) {
+        $('#selected-image').transition('fade left in', '900ms');
+      } else {
+        $('#selected-image').transition('fade right in', '900ms');
+      }
     }
   }
 

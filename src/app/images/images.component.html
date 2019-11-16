@@ -10,13 +10,13 @@
     <div class="row">
       <div class="right aligned ten wide column">
         <div id="first-look-image" class="ui huge image">
-          <img id="selected-image" [src]="selectedImageLink" />
+          <img id="selected-image" src=" {{ selectedImageLink }}" />
         </div>
       </div>
       <div class="left aligned six wide column">
         <div id="wide-pagination" class="ui secondary pointing pagination menu">
           <a
-            *ngFor="let image of images; let i = index"
+            *ngFor="let image of imageNames; let i = index"
             (click)="setImage(i)"
             class="item"
             [ngClass]="{ active: i === selectedImageIndex }"
