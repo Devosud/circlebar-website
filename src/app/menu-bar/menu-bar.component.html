@@ -31,23 +31,31 @@
       </a>
     </div>
     <div class="column">
-      <div class="ui top right pointing dropdown icon item">
+      <button (click)="showMenu()" class="ui icon secondary basic tiny button">
         <i class="bars large icon"></i>
-        <div class="menu">
-          <a
-            class="item"
-            routerLink="/features"
-            [ngClass]="{ active: selectedPage === 'features' }"
-          >
-            {{ i18nService.getByKey("nav.features", "fr") }}</a
-          >
-          <a
-            class="item"
-            routerLink="/images"
-            [ngClass]="{ active: selectedPage === 'images' }"
-          >
-            {{ i18nService.getByKey("nav.images", "fr") }}</a
-          >
+      </button>
+      <div class="ui basic modal">
+        <div class="content">
+          <div class="ui centered internally celled grid">
+              <div class="row">
+              <a
+                (click)="hideMenu()"
+                routerLink="/features"
+                [ngClass]="{ active: selectedPage === 'features' }"
+              >
+                <h1>{{ i18nService.getByKey("nav.features", "fr") }}</h1></a
+              >
+            </div>
+            <div class="row">
+              <a
+                (click)="hideMenu()"
+                routerLink="/images"
+                [ngClass]="{ active: selectedPage === 'images' }"
+              >
+                <h1>{{ i18nService.getByKey("nav.images", "fr") }}</h1></a
+              >
+            </div>
+          </div>
         </div>
       </div>
     </div>

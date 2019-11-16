@@ -20,8 +20,19 @@ export class MenuBarComponent implements OnInit {
     }
   }
 
+  showMenu() {
+    $('.ui.modal')
+      .modal('show')
+      ;
+  }
+
+  hideMenu() {
+    $('.ui.modal')
+      .modal('hide')
+      ;
+  }
+
   ngOnInit() {
-    $('.ui.dropdown.icon.item').dropdown();
   }
 
 }
