@@ -11,17 +11,20 @@ declare var $: any;
 export class ImagesComponent implements OnInit {
 
   public imageNames: any[];
-  public selectedImageIndex: number;
+  public images: any[] = [];
+  public selectedImageIndex;
   public selectedImageLink: string;
   public selectedImageTitle: string;
   public selectedImageDescription: string;
 
   constructor(public i18nService: I18nService) {
     this.imageNames = ['bar-info', 'bar-commu', 'bar-services', 'account', 'discover'];
+    this.imageNames.forEach(element => {
+      this.images.push(require('../../assets/' + element + '.png'));
+    });
   }
 
   setImage(index: number) {
-    this.selectedImageLink = require('../../assets/' + this.imageNames[index] + '.png');
     this.selectedImageTitle = this.i18nService.getByKey('images.' + this.imageNames[index] + '.title', 'fr');
     this.selectedImageDescription = this.i18nService.getByKey('images.' + this.imageNames[index] + '.description', 'fr');
     this.selectedImageIndex = index;
