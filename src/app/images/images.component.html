@@ -38,8 +38,8 @@
     <div id="mobile-pagination" class="centered row">
       <div class="ui secondary pointing pagination menu">
         <a
-          *ngFor="let image of images; let i = index"
-          (click)="setImage(i)"
+          *ngFor="let image of imageNames; let i = index"
+          (click)="setCorrectTransition(i)"
           class="item"
           [ngClass]="{ active: i === selectedImageIndex }"
         >

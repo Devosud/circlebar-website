@@ -1,4 +1,4 @@
-import { Component, OnInit, AfterViewInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { I18nService } from '../i18n.service';
 import * as _ from 'lodash';
 declare var $: any;
@@ -11,7 +11,6 @@ declare var $: any;
 export class ImagesComponent implements OnInit {
 
   public imageNames: any[];
-  public images: any[] = [];
   public selectedImageIndex: number;
   public selectedImageLink: string;
   public selectedImageTitle: string;
@@ -22,25 +21,28 @@ export class ImagesComponent implements OnInit {
   }
 
   setImage(index: number) {
-    this.setCorrectTransition(index);
-    this.selectedImageIndex = index;
     this.selectedImageLink = require('../../assets/' + this.imageNames[index] + '.png');
     this.selectedImageTitle = this.i18nService.getByKey('images.' + this.imageNames[index] + '.title', 'fr');
     this.selectedImageDescription = this.i18nService.getByKey('images.' + this.imageNames[index] + '.description', 'fr');
+    this.selectedImageIndex = index;
   }
 
   setCorrectTransition(index: number) {
     if (index !== this.selectedImageIndex) {
       if (index < this.selectedImageIndex) {
-        $('#selected-image').transition('fade left in', '900ms');
+        $('#selected-image').transition('fade right out', '700', () => {
+          this.setImage(index);
+        }).transition('fade left in', '700ms');
       } else {
-        $('#selected-image').transition('fade right in', '900ms');
+        $('#selected-image').transition('fade left out', '700', () => {
+          this.setImage(index);
+        }).transition('fade right in', '700ms');
       }
     }
   }
 
   ngOnInit() {
-    this.setImage(0);
+    this.setCorrectTransition(0);
   }
 
 }
