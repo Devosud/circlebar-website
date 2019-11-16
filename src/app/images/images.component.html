@@ -1,42 +1,41 @@
 <div id="images">
   <div id="images-grid" class="ui grid">
     <div id="mobile-title" class="row">
-      <h1 class="ui header">
-        {{ selectedImageTitle }}
-      </h1>
+      <div class="left floated right aligned column">
+        <h1 class="ui header">
+          {{ selectedImageTitle }}
+        </h1>
+      </div>
     </div>
     <div class="row">
-      <div class="right aligned ten wide column">
+      <div class="right aligned six wide column">
+        <div id="wide-pagination" class="ui secondary pointing pagination menu">
+          <a
+            *ngFor="let image of images; let i = index"
+            (click)="setImage(i)"
+            class="item"
+            [ngClass]="{ active: i === selectedImageIndex }"
+          >
+            {{ i + 1 }}
+          </a>
+        </div>
+        <h1 id="wide-title" class="ui header">
+          {{ selectedImageTitle }}
+          <h2 class="sub header">
+            {{ selectedImageDescription }}
+          </h2>
+        </h1>
+        <h2 id="mobile-description" class="sub header">
+          {{ selectedImageDescription }}
+        </h2>
+      </div>
+      <div class="left aligned ten wide column">
         <div id="first-look-image" class="ui huge image">
           <img id="selected-image" [src]="selectedImageLink" />
         </div>
       </div>
-      <div class="left aligned six wide column">
-          <div
-            id="wide-pagination"
-            class="ui secondary pointing pagination menu"
-          >
-            <a
-              *ngFor="let image of images; let i = index"
-              (click)="setImage(i)"
-              class="item"
-              [ngClass]="{ active: i === selectedImageIndex }"
-            >
-              {{ i + 1 }}
-            </a>
-          </div>
-          <h1 id="wide-title" class="ui header">
-            {{ selectedImageTitle }}
-            <h2 class="sub header">
-              {{ selectedImageDescription }}
-            </h2>
-          </h1>
-          <h2 id="mobile-description" class="sub header">
-            {{ selectedImageDescription }}
-          </h2>
-      </div>
     </div>
-    <div id="mobile-pagination" class="row">
+    <div id="mobile-pagination" class="centered row">
       <div class="ui secondary pointing pagination menu">
         <a
           *ngFor="let image of images; let i = index"
