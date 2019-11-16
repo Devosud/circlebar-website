@@ -17,8 +17,11 @@ export class FirstLookComponent implements OnInit {
     $('#first-look-image').transition('scale in', '900ms');
     $('.ui.sticky')
       .sticky({
-        context: '#first-look'
-      })
+        context: '#first-look-image',
+        offset: 60,
+        observeChanges: true,
+        silent: true
+      }, 2000)
       ;
   }
 }
