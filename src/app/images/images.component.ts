@@ -37,11 +37,6 @@ export class ImagesComponent implements OnInit {
   }
 
   ngOnInit() {
-    $('.ui.sticky')
-      .sticky({
-        context: '#images-grid'
-      })
-      ;
     this.setImage(0);
   }
 
