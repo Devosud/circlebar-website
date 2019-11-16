@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { I18nService } from '../i18n.service';
 import * as _ from 'lodash';
 declare var $: any;
+declare var require: any;
 
 @Component({
   selector: 'app-images',

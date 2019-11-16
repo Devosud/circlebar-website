@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { I18nService } from '../i18n.service';
 declare var $: any;
+declare var require: any;
 
 @Component({
   selector: 'app-first-look',
