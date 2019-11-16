@@ -1,28 +1,28 @@
 <div id="first-look">
   <div id="first-look-grid" class="ui stackable grid">
     <div id="main-row" class="row">
-      <div id="first-look-description" class="seven wide column">
-        <div id="no-sticky">
-          <h1 class="ui header">
-            {{ i18nService.getByKey("first-look.title", "fr") }}
-            <h2 class="sub header">
-              {{ i18nService.getByKey("first-look.description", "fr") }}
-            </h2>
-          </h1>
-          <div id="store-links" class="ui centered grid">
-            <div class="row">
-              <a href="https://apple.fr">
-                <img class="ui small image" src="../../assets/app-store.png" />
-              </a>
-              <a href="https://google.fr">
-                <img
-                  class="ui small image"
-                  src="../../assets/google-play.png"
-                />
-              </a>
-            </div>
+      <div id="no-sticky">
+        <h1 class="ui header">
+          {{ i18nService.getByKey("first-look.title", "fr") }}
+          <h2 class="sub header">
+            {{ i18nService.getByKey("first-look.description", "fr") }}
+          </h2>
+        </h1>
+        <div id="store-links" class="ui centered grid">
+          <div class="row">
+            <a href="https://apple.fr">
+              <img class="ui small image" src="../../assets/app-store.png" />
+            </a>
+            <a href="https://google.fr">
+              <img class="ui small image" src="../../assets/google-play.png" />
+            </a>
           </div>
         </div>
+      </div>
+      <div id="first-look-image" class="nine wide column">
+        <img class="ui massive image" src="../../assets/first-page.png" />
+      </div>
+      <div id="first-look-description" class="seven wide column">
         <div id="sticky" class="ui sticky">
           <h1 class="ui header">
             {{ i18nService.getByKey("first-look.title", "fr") }}
@@ -44,9 +44,6 @@
             </div>
           </div>
         </div>
-      </div>
-      <div id="first-look-image" class="nine wide column">
-        <img class="ui massive image" src="../../assets/first-page.png" />
       </div>
     </div>
   </div>
