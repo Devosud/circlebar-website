@@ -17,7 +17,7 @@
         <div id="wide-pagination" class="ui secondary pointing pagination menu">
           <a
             *ngFor="let image of imageNames; let i = index"
-            (click)="setImage(i)"
+            (click)="setCorrectTransition(i)"
             class="item"
             [ngClass]="{ active: i === selectedImageIndex }"
           >
