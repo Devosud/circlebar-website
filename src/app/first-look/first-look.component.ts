@@ -11,7 +11,7 @@ declare var require: any;
 export class FirstLookComponent implements OnInit {
 
   public googlePlay = require('../../assets/google-play.png');
-  public appStore = require('../../assets/google-play.png');
+  public appStore = require('../../assets/app-store.png');
   public firstImage = require('../../assets/first-page.png');
 
   constructor(public i18nService: I18nService) {
