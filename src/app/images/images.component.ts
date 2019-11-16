@@ -11,6 +11,7 @@ declare var require: any;
 })
 export class ImagesComponent implements OnInit {
 
+  public _ = _;
   public imageNames: any[];
   public images: any[] = [];
   public selectedImageIndex;
