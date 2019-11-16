@@ -9,6 +9,7 @@ import { FeaturesComponent } from './features/features.component';
 import { ImagesComponent } from './images/images.component';
 import { I18nService } from './i18n.service';
 import { HttpClientModule } from '@angular/common/http';
+import { LegalComponent } from './legal/legal.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { HttpClientModule } from '@angular/common/http';
     FirstLookComponent,
     MenuBarComponent,
     FeaturesComponent,
-    ImagesComponent
+    ImagesComponent,
+    LegalComponent
   ],
   imports: [
     BrowserModule,

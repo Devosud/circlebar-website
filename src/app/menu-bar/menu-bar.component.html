@@ -37,7 +37,7 @@
       <div class="ui basic modal">
         <div class="content">
           <div class="ui centered internally celled grid">
-              <div class="row">
+            <div class="row">
               <a
                 (click)="hideMenu()"
                 routerLink="/features"
@@ -57,9 +57,12 @@
             </div>
           </div>
         </div>
-            <div class="footer">
-              Copyright &copy; 2019 - Devosud
-            </div>
+        <div class="footer">
+          <a (click)="hideMenu()" routerLink="/legal">{{
+            i18nService.getByKey("nav.legal-notices", "fr")
+          }}</a>
+          | Copyright &copy; 2019 - Devosud
+        </div>
       </div>
     </div>
   </div>

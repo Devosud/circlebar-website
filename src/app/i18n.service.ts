@@ -8,6 +8,7 @@ export class I18nService {
     fr: {
       'ui.nav.features': 'Fonctionnalités',
       'ui.nav.images': 'Images',
+      'ui.nav.legal-notices': 'Mentions légales',
       'ui.first-look.title': 'CircleBar,',
       'ui.first-look.description': 'le premier réseau social 100% bar',
       'ui.features.bar-selection.title': 'Une sélection unique',
@@ -41,6 +42,7 @@ export class I18nService {
     en: {
       'ui.nav.features': 'EN',
       'ui.nav.images': 'EN',
+      'ui.nav.legal-notices': 'Legal notices',
       'ui.first-look.title': 'Title_EN',
       'ui.first-look.description': 'Description_EN',
       'ui.features.bar-selection.title': 'EN',
