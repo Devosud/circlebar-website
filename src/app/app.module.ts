@@ -10,6 +10,7 @@ import { ImagesComponent } from './images/images.component';
 import { I18nService } from './i18n.service';
 import { HttpClientModule } from '@angular/common/http';
 import { LegalComponent } from './legal/legal.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { LegalComponent } from './legal/legal.component';
     MenuBarComponent,
     FeaturesComponent,
     ImagesComponent,
-    LegalComponent
+    LegalComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
