@@ -8,7 +8,7 @@ export class I18nService {
     fr: {
       'ui.nav.features': 'Fonctionnalités',
       'ui.nav.images': 'Images',
-      'ui.first-look.title': 'Circle Bar,',
+      'ui.first-look.title': 'CircleBar,',
       'ui.first-look.description': 'le premier réseau social 100% bar',
       'ui.features.bar-selection.title': 'Une sélection unique',
       'ui.features.bar-selection.description': 'Accède à une large sélection de bar situés dans ta ville',
