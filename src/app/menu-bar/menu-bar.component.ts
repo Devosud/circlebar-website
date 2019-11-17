@@ -12,8 +12,15 @@ declare var require: any;
 })
 export class MenuBarComponent implements OnInit {
 
+  public logo = require('../../assets/logo.png');
+  public primitivoLogo = require('../../assets/primitivo.png');
+  public primitivoLink = 'https://facebook.com';
+  public facebookLink = 'https://facebook.com';
+  public linkedinLink = 'https://linkedin.fr';
   public googlePlay = require('../../assets/google-play.png');
+  public googlePlayLink = 'https://google.fr';
   public appStore = require('../../assets/app-store.png');
+  public appStoreLink = 'https://apple.fr';
 
   constructor(private router: Router, public i18nService: I18nService) {
   }

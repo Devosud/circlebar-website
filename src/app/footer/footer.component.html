@@ -2,5 +2,14 @@
   <a routerLink="/legal">{{
     i18nService.getByKey("nav.legal-notices", "fr")
   }}</a>
-  | Copyright &copy; 2019 - Devosud <i class="github icon"></i>
+  |
+  {{ i18nService.getByKey("nav.follow", "fr") }}
+  <a href="{{ facebookLink }}"> <i class="link facebook big icon"></i></a>
+  <a href="{{ primitivoLink }}">
+    <img class="ui mini image" src="{{ primitivoLogo }}"
+  /></a>
+  <a href="{{ linkedinLink }}"
+    ><i class="link linkedin alternate big icon"></i
+  ></a>
+  | Copyright &copy; 2019 - <a href="https://me.dev-o-sud.fr">Devosud</a>
 </div>
