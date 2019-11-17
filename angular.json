@@ -67,7 +67,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "circlebar-website:build"
+            "browserTarget": "circlebar-website:build",
+            "host": "0.0.0.0"
           },
           "configurations": {
             "production": {
