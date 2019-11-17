@@ -1,6 +1,6 @@
 <div id="images">
-  <div id="images-grid" class="ui grid">
-    <div id="mobile-title" class="row">
+  <div id="images-grid" class="ui center aligned grid">
+    <div class="mobile only row">
       <div class="left floated right aligned column">
         <h1 class="ui header">
           {{ selectedImageTitle }}
@@ -8,13 +8,13 @@
       </div>
     </div>
     <div class="row">
-      <div class="right aligned height wide column">
-        <div id="first-look-image" class="ui large image">
+      <div id="image-column" class="nine wide column">
+        <div class="ui large image">
           <img id="selected-image" src="{{ images[selectedImageIndex] }}" />
         </div>
       </div>
-      <div class="left aligned height wide column">
-        <div id="wide-pagination" class="ui secondary pointing pagination menu">
+      <div class="left aligned seven wide computer only column">
+        <div class="ui secondary pointing pagination menu">
           <a
             *ngFor="let image of imageNames; let i = index"
             (click)="setCorrectTransition(i)"
@@ -24,18 +24,22 @@
             {{ i + 1 }}
           </a>
         </div>
-        <h1 id="wide-title" class="ui header">
+        <h1 class="ui header">
           {{ selectedImageTitle }}
           <h2 class="sub header">
             {{ selectedImageDescription }}
           </h2>
         </h1>
-        <h2 id="mobile-description" class="sub header">
-          {{ selectedImageDescription }}
-        </h2>
+      </div>
+      <div class="left aligned seven wide mobile only column">
+        <h1 class="ui header">
+          <h2 class="sub header">
+            {{ selectedImageDescription }}
+          </h2>
+        </h1>
       </div>
     </div>
-    <div id="mobile-pagination" class="centered row">
+    <div class="mobile only centered row">
       <div class="ui secondary pointing pagination menu">
         <a
           *ngFor="let image of imageNames; let i = index"

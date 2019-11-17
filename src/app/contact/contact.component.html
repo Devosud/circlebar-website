@@ -1,0 +1,50 @@
+<div id="contact">
+  <div class="ui large form">
+    <div class="field">
+      <label>{{ i18nService.getByKey("contact.name", "fr") }}</label>
+      <div class="two fields">
+        <div class="field">
+          <input
+            type="text"
+            name="firstName"
+            placeholder="{{
+              i18nService.getByKey('contact.first-name', 'fr')
+            }}*"
+          />
+        </div>
+        <div class="field">
+          <input
+            type="text"
+            name="lastName"
+            placeholder="{{ i18nService.getByKey('contact.last-name', 'fr') }}"
+          />
+        </div>
+        <div class="field">
+          <input
+            type="email"
+            name="email"
+            placeholder="{{ i18nService.getByKey('contact.mail', 'fr') }}*"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="field">
+      <label>{{ i18nService.getByKey("contact.subject", "fr") }}*</label>
+      <input type="text" name="subject" />
+    </div>
+    <div class="field">
+      <label>{{ i18nService.getByKey("contact.message", "fr") }}*</label>
+      <textarea name="message"></textarea>
+    </div>
+    <div class="ui secondary submit button" (click)="validateForm()">
+      {{ i18nService.getByKey("contact.submit", "fr") }}
+    </div>
+    <b>(* : {{ i18nService.getByKey("contact.validation.required-fields", "fr") }})</b>
+    <div *ngIf="isFormValid" class="ui positive message">
+      <div class="header">
+          {{ i18nService.getByKey("contact.validation.success", "fr") }}
+      </div>
+      {{ i18nService.getByKey("contact.validation.success-message", "fr") }}
+    </div>
+  </div>
+</div>

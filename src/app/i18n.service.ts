@@ -6,8 +6,9 @@ import * as _ from 'lodash';
 export class I18nService {
   private i18nData = {
     fr: {
-      'ui.nav.features': 'Fonctionnalités',
+      'ui.nav.team': 'L\'équipe',
       'ui.nav.images': 'Images',
+      'ui.nav.contact': 'Contact',
       'ui.nav.legal-notices': 'Mentions légales',
       'ui.nav.follow': 'Nous suivre : ',
       'ui.first-look.title': 'CircleBar,',
@@ -38,11 +39,26 @@ export class I18nService {
       'ui.images.bar-services.description':
         'Un large choix de service est proposé pour par exemple de permettre de laisser un pourboir via Tip',
       'ui.images.discover.title': 'Découvrir',
-      'ui.images.discover.description': 'Permet de découvrir de nouveaux bars en lien avec ceux que tu aimes déjà'
+      'ui.images.discover.description': 'Permet de découvrir de nouveaux bars en lien avec ceux que tu aimes déjà',
+      'ui.contact.name': 'Qui es-tu ?',
+      'ui.contact.first-name': 'Prénom',
+      'ui.contact.last-name': 'Nom',
+      'ui.contact.mail': 'Mail',
+      'ui.contact.subject': 'Sujet de ton message',
+      'ui.contact.message': 'Ton message',
+      'ui.contact.submit': 'Envoyer',
+      'ui.contact.validation.first-name': 'Merci de renseigner ton prénom',
+      'ui.contact.validation.email': 'Merci de renseigner un mail valide',
+      'ui.contact.validation.subject': 'Merci de renseigner le sujet de ton message',
+      'ui.contact.validation.message': 'Merci de renseigner un message',
+      'ui.contact.validation.required-fields': 'Champs obligatoires',
+      'ui.contact.validation.success': 'Succès !',
+      'ui.contact.validation.success-message': 'Votre message a bien été envoyé',
     },
     en: {
-      'ui.nav.features': 'EN',
+      'ui.nav.team': 'The team',
       'ui.nav.images': 'EN',
+      'ui.nav.contact': 'EN',
       'ui.nav.legal-notices': 'Legal notices',
       'ui.nav.follow': 'Follow us : ',
       'ui.first-look.title': 'Title_EN',
@@ -69,6 +85,20 @@ export class I18nService {
       'ui.images.bar-services.description': 'EN',
       'ui.images.discover.title': 'EN',
       'ui.images.discover.description': 'EN',
+      'ui.contact.name': 'Who are you ?',
+      'ui.contact.first-name': 'First name',
+      'ui.contact.last-name': 'Last name',
+      'ui.contact.mail': 'E-mail',
+      'ui.contact.subject': 'Suject of your message',
+      'ui.contact.message': 'Your message',
+      'ui.contact.submit': 'Submit',
+      'ui.contact.validation.first-name': 'Please enter your name',
+      'ui.contact.validation.email': 'Please enter a valid e-mail',
+      'ui.contact.validation.subject': 'Please enter a subject',
+      'ui.contact.validation.message': 'Please enter a message',
+      'ui.contact.validation.required-fields': 'Required fields',
+      'ui.contact.validation.success': 'Success !',
+      'ui.contact.validation.success-message': 'Your message has been sent',
     }
   };
 

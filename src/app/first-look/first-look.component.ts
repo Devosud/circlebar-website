@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { I18nService } from '../i18n.service';
 declare var $: any;
 declare var require: any;
@@ -8,7 +8,7 @@ declare var require: any;
   templateUrl: './first-look.component.html',
   styleUrls: ['./first-look.component.less']
 })
-export class FirstLookComponent implements OnInit {
+export class FirstLookComponent implements AfterViewInit {
 
   public googlePlay = require('../../assets/google-play.png');
   public appStore = require('../../assets/app-store.png');
@@ -18,7 +18,8 @@ export class FirstLookComponent implements OnInit {
     this.i18nService = i18nService;
   }
 
-  ngOnInit() {
+  ngAfterViewInit() {
     $('#first-look-image').transition('scale in', '900ms');
   }
+
 }

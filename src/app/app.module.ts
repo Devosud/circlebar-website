@@ -11,6 +11,8 @@ import { I18nService } from './i18n.service';
 import { HttpClientModule } from '@angular/common/http';
 import { LegalComponent } from './legal/legal.component';
 import { FooterComponent } from './footer/footer.component';
+import { TeamComponent } from './team/team.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { FooterComponent } from './footer/footer.component';
     FeaturesComponent,
     ImagesComponent,
     LegalComponent,
-    FooterComponent
+    FooterComponent,
+    TeamComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

@@ -1,15 +1,17 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { FirstLookComponent } from './first-look/first-look.component';
-import { FeaturesComponent } from './features/features.component';
 import { ImagesComponent } from './images/images.component';
 import { LegalComponent } from './legal/legal.component';
+import { TeamComponent } from './team/team.component';
+import { ContactComponent } from './contact/contact.component';
 
 const routes: Routes = [
   { path: '', component: FirstLookComponent },
-  { path: 'features', component: FeaturesComponent },
   { path: 'images', component: ImagesComponent },
-  { path: 'legal', component: LegalComponent }
+  { path: 'legal', component: LegalComponent },
+  { path: 'team', component: TeamComponent },
+  { path: 'contact', component: ContactComponent }
 ];
 
 @NgModule({
