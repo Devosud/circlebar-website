@@ -75,24 +75,24 @@
               <div id="follow" class="ui centered grid">
                 <h2>{{ i18nService.getByKey("nav.follow", "fr") }}</h2>
                 <div id="links" class="row">
-                  <a href="{{ facebookLink }}">
+                  <a target="_blank" href="{{ facebookLink }}">
                     <i class="link facebook huge icon"></i
                   ></a>
-                  <a href="{{ primitivoLink }}">
+                  <a  target="_blank"href="{{ primitivoLink }}">
                     <img class="ui tiny image" src="{{ primitivoLogo }}"
                   /></a>
 
-                  <a href="{{ linkedinLink }}"
+                  <a  target="_blank"href="{{ linkedinLink }}"
                     ><i class="link linkedin alternate huge icon"></i
                   ></a>
                 </div>
               </div>
               <div id="store-links" class="ui centered grid">
                 <div class="row">
-                  <a href="{{ appStoreLink }}">
+                  <a target="_blank" href="{{ appStoreLink }}">
                     <img class="ui small image" src="{{ appStore }}" />
                   </a>
-                  <a href="{{ googlePlayLink }}">
+                  <a target="_blank" href="{{ googlePlayLink }}">
                     <img class="ui small image" src="{{ googlePlay }}" />
                   </a>
                 </div>
@@ -105,7 +105,7 @@
             i18nService.getByKey("nav.legal-notices", "fr")
           }}</a>
           | Copyright &copy; 2019 -
-          <a href="https://me.dev-o-sud.fr">Devosud</a>
+          <a target="_blank" href="{{ devOsudLink }}">Devosud</a>
         </div>
       </div>
     </div>

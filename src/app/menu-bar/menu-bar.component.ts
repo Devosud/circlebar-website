@@ -21,6 +21,7 @@ export class MenuBarComponent implements OnInit {
   public googlePlayLink = 'https://google.fr';
   public appStore = require('../../assets/app-store.png');
   public appStoreLink = 'https://apple.fr';
+  public devOsudLink = 'https://me.dev-o-sud.fr';
 
   constructor(private router: Router, public i18nService: I18nService) {
   }
