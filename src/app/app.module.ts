@@ -13,6 +13,7 @@ import { LegalComponent } from './legal/legal.component';
 import { FooterComponent } from './footer/footer.component';
 import { TeamComponent } from './team/team.component';
 import { ContactComponent } from './contact/contact.component';
+import { DonateComponent } from './donate/donate.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ContactComponent } from './contact/contact.component';
     LegalComponent,
     FooterComponent,
     TeamComponent,
-    ContactComponent
+    ContactComponent,
+    DonateComponent
   ],
   imports: [
     BrowserModule,

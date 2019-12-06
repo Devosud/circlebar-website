@@ -6,7 +6,7 @@
       </a>
     </div>
     <div class="column">
-      <div class="ui three item secondary pointing menu">
+      <div class="ui four item secondary pointing menu">
         <a
           class="item"
           routerLink="/team"
@@ -27,6 +27,13 @@
           [ngClass]="{ active: selectedPage === 'contact' }"
         >
           <h1>{{ i18nService.getByKey("nav.contact", "fr") }}</h1></a
+        >
+        <a
+          class="item"
+          routerLink="/donate"
+          [ngClass]="{ active: selectedPage === 'donate' }"
+        >
+          <h1>{{ i18nService.getByKey("nav.donate", "fr") }}</h1></a
         >
       </div>
     </div>
@@ -69,6 +76,16 @@
                 [ngClass]="{ active: selectedPage === 'contact' }"
               >
                 <h1>{{ i18nService.getByKey("nav.contact", "fr") }}</h1></a
+              >
+            </div>
+
+            <div class="row">
+              <a
+                (click)="hideMenu()"
+                routerLink="/donate"
+                [ngClass]="{ active: selectedPage === 'donate' }"
+              >
+                <h1>{{ i18nService.getByKey("nav.donate", "fr") }}</h1></a
               >
             </div>
             <div class="row">
