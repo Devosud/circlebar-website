@@ -1,1 +1,49 @@
-<p>donate works!</p>
+<div id="donate">
+  <div class="ui grid">
+    <div id="donate-text"class="centered row">
+      <h1 class="ui header">
+        {{ i18nService.getByKey("donate.title", "fr") }}
+        <h2 class="sub header">
+          {{ i18nService.getByKey("donate.description", "fr") }}
+        </h2>
+      </h1>
+    </div>
+    <div class="centered row">
+      <div class="column">
+        <a
+          href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WLR45GVGFHTGE&source=url"
+          target="_blank"
+          id="paypal-button"
+          class="ui vertical animated button"
+          tabindex="0"
+        >
+          <div class="visible content">
+            <i class="paypal icon"></i>
+            {{ i18nService.getByKey("donate.paypal", "fr") }}
+          </div>
+          <div class="hidden content">
+            {{ i18nService.getByKey("donate.thank-you", "fr") }}
+          </div>
+        </a>
+      </div>
+      <div class="column">
+        <a
+          href="https://www.patreon.com/bePatron?u=27851735"
+          data-patreon-widget-type="become-patron-button"
+          target="_blank"
+          id="patreon-button"
+          class="ui vertical animated button"
+          tabindex="0"
+        >
+          <div class="visible content">
+            <i class="patreon icon"></i>
+            {{ i18nService.getByKey("donate.patreon", "fr") }}
+          </div>
+          <div class="hidden content">
+            {{ i18nService.getByKey("donate.thank-you", "fr") }}
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
