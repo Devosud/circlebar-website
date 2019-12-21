@@ -29,7 +29,7 @@ export class I18nService {
       'ui.features.community.description': 'Rejoins une commaunauté active, toujours prête à proposer des redez-vous pour animer ta soirée',
       'ui.features.be-notify.title': 'Des notifs en temps réels',
       'ui.features.be-notify.description':
-        'Sois notifié(e) en temps réel des happy-hours et des horraires d\'ouverture de n\'importe quel bar',
+        'Sois notifié(e) en temps réel des happy-hours et des horaires d\'ouverture de n\'importe quel bar',
       'ui.features.favorite-bars.title': 'Les favoris',
       'ui.features.favorite-bars.description': 'Ajoute tes bars préférés à ta liste de favoris pour pouvoir les retrouver facilement',
       'ui.images.account.title': 'Compte',
@@ -40,7 +40,7 @@ export class I18nService {
         'Tu peux regarder sur la page de ton bar préféré les soirées organisées par les autres utilisateurs',
       'ui.images.bar-info.title': 'Infos',
       'ui.images.bar-info.description':
-        'Les infos essentielles du bar sont facilements trouvables comme sa localisation ou encore ses horraires d\'ouverture',
+        'Les infos essentielles du bar sont facilements trouvables comme sa localisation ou encore ses horaires d\'ouverture',
       'ui.images.bar-services.title': 'Services',
       'ui.images.bar-services.description':
         'Un large choix de service est proposé pour par exemple de permettre de laisser un pourboir via Tip',
