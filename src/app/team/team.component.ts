@@ -140,17 +140,17 @@ export class TeamComponent implements AfterViewInit {
       const managementDropdownId = "#dropdown-management-" + index;
       $(techSkillId).popup({
         popup: $(techSkillDropdownId),
-        hoverable: true,
+        on: 'click',
         position: "bottom left"
       });
       $(hobbyId).popup({
         popup: $(hobbyDropdownId),
-        hoverable: true,
+        on: 'click',
         position: "bottom left"
       });
       $(managementId).popup({
         popup: $(managementDropdownId),
-        hoverable: true,
+        on: 'click',
         position: "bottom left"
       });
       if (index % 2 === 0) {
