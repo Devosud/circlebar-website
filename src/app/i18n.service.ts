@@ -60,6 +60,9 @@ export class I18nService {
       'ui.contact.validation.required-fields': 'Champs obligatoires',
       'ui.contact.validation.success': 'Succès !',
       'ui.contact.validation.success-message': 'Votre message a bien été envoyé',
+      'ui.team.technical-skills': 'Compétences techniques',
+      'ui.team.soft-skills': 'Compétences managériales et soft skills',
+      'ui.team.hobbies': 'Loisirs',
     },
     en: {
       'ui.nav.team': 'The team',
@@ -111,6 +114,9 @@ export class I18nService {
       'ui.contact.validation.required-fields': 'Required fields',
       'ui.contact.validation.success': 'Success !',
       'ui.contact.validation.success-message': 'Your message has been sent',
+      'ui.team.technical-skills': 'Technical skills',
+      'ui.team.soft-skills': 'Management and soft skills',
+      'ui.team.hobbies': 'Hobbies',
     }
   };
 

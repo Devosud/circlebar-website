@@ -1,10 +1,105 @@
 <div id="team">
-  <iframe
-    src="https://giphy.com/embed/puOukoEvH4uAw"
-    width="433"
-    height="480"
-    frameBorder="0"
-    class="giphy-embed"
-    allowFullScreen
-  ></iframe>
+  <div class="ui grid">
+    <div class="ui cards">
+      <div
+        *ngFor="let member of teamMembers; let i = index"
+        class="card"
+        id="card-member-{{ i }}"
+      >
+        <div class="image">
+          <img src="{{ member.image }}" />
+        </div>
+        <div class="content">
+          <div class="header">{{ member.name }}</div>
+          <div class="meta">
+            {{ member.status }}
+          </div>
+          <div class="description">
+            <div class="ui labels">
+              <a id="tech-skills-{{ i }}" class="ui blue label">
+                {{ i18nService.getByKey("team.technical-skills", "fr") }}
+                <div id="dropdown-tech-skills-{{ i }}" class="ui fluid popup">
+                  <div class="content">
+                    <ul class="ui list">
+                      <li *ngFor="let techSkill of member.skills.techSkills">
+                        {{ techSkill }}
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </a>
+              <a id="hobbies-{{ i }}" class="ui orange label">
+                {{ i18nService.getByKey("team.hobbies", "fr") }}
+                <div id="dropdown-hobbies-{{ i }}" class="ui fluid popup">
+                  <div class="content">
+                    <ul class="ui list">
+                      <li *ngFor="let techSkill of member.skills.hobbies">
+                        {{ techSkill }}
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </a>
+              <a id="management-{{ i }}" class="ui red label">
+                {{ i18nService.getByKey("team.soft-skills", "fr") }}
+                <div id="dropdown-management-{{ i }}" class="ui fluid popup">
+                  <div class="content">
+                    <ul class="ui list">
+                      <li *ngFor="let techSkill of member.skills.management">
+                        {{ techSkill }}
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="extra content">
+          <div class="ui large buttons">
+            <a
+              *ngIf="member.linkedin"
+              href="{{ member.linkedin }}"
+              target="_blank"
+              class="ui basic blue icon button"
+            >
+              <i class="linkedin icon"></i>
+            </a>
+            <a
+              *ngIf="member.whatsapp"
+              href="{{ member.whatsapp }}"
+              target="_blank"
+              class="ui basic green icon button"
+            >
+              <i class="whatsapp icon"></i>
+            </a>
+            <a
+              *ngIf="member.facebook"
+              href="{{ member.facebook }}"
+              target="_blank"
+              class="ui basic blue icon button"
+            >
+              <i class="facebook f icon"></i>
+            </a>
+            <a
+              *ngIf="member.reddit"
+              href="{{ member.reddit }}"
+              target="_blank"
+              class="ui basic orange icon button"
+            >
+              <i class="reddit icon"></i>
+            </a>
+            <a
+              *ngIf="member.github"
+              href="{{ member.github }}"
+              target="_blank"
+              class="ui basic grey icon button"
+            >
+              <i class="github icon"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
