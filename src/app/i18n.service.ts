@@ -40,7 +40,7 @@ export class I18nService {
         'Tu peux regarder sur la page de ton bar préféré les soirées organisées par les autres utilisateurs',
       'ui.images.bar-info.title': 'Infos',
       'ui.images.bar-info.description':
-        'Les infos essentielles du bar sont facilements trouvables comme sa localisation ou encore ses horaires d\'ouverture',
+        'Les infos essentielles du bar sont facilement trouvables comme sa localisation ou encore ses horaires d\'ouverture',
       'ui.images.bar-services.title': 'Services',
       'ui.images.bar-services.description':
         'Un large choix de service est proposé pour par exemple de permettre de laisser un pourboir via Tip',

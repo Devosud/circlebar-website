@@ -9,7 +9,6 @@ import { FeaturesComponent } from './features/features.component';
 import { ImagesComponent } from './images/images.component';
 import { I18nService } from './i18n.service';
 import { HttpClientModule } from '@angular/common/http';
-import { LegalComponent } from './legal/legal.component';
 import { FooterComponent } from './footer/footer.component';
 import { TeamComponent } from './team/team.component';
 import { ContactComponent } from './contact/contact.component';
@@ -22,7 +21,6 @@ import { DonateComponent } from './donate/donate.component';
     MenuBarComponent,
     FeaturesComponent,
     ImagesComponent,
-    LegalComponent,
     FooterComponent,
     TeamComponent,
     ContactComponent,
