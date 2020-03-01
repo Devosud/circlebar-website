@@ -11,7 +11,7 @@ export class FooterComponent implements OnInit {
 
   public primitivoLogo = require('../../assets/primitivo.png');
   public facebookLink = 'https://facebook.com';
-  public linkedinLink = 'https://linkedin.fr';
+  public linkedinLink = 'https://www.linkedin.com/company/primitivofr/';
   public primitivoLink = 'https://primitivo.fr';
   public devOsudLink = 'https://me.dev-o-sud.fr';
 

@@ -11,11 +11,22 @@ export class ContactComponent implements AfterViewInit {
 
   public isFormValid = false;
 
+  form = {
+    firstName: null,
+    lastName: null,
+    email: null,
+    subject: null,
+    message: null
+  }
+
   constructor(public i18nService: I18nService) { }
 
-  public validateForm() {
+  public validateForm(form) {
     if ($('.ui.form').form('is valid')) {
       this.isFormValid = true;
+
+      var _form = form.value;
+      window.open("mailto:admin.entreprise@primitivo.fr?subject=" + _form.subject + " de " + _form.firstName + " " + _form.lastName + "&body=" + _form.message + "%0D%0A %0D%0A de "+_form.email)
     }
   }
 

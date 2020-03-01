@@ -35,7 +35,7 @@ export class TeamComponent implements AfterViewInit {
           "Amazon Web Service"
         ],
         management: ["Merise", "Management", "SCRUM", "UX Design"],
-        hobbies: ["Musique et Production", "Abelton", "Nage sportive"]
+        hobbies: ["Musique et Production", "Ableton", "Nage sportive"]
       }
     },
     {
@@ -102,7 +102,7 @@ export class TeamComponent implements AfterViewInit {
       status: "Etudiant ingénieur informatique",
       city: "Besançon",
       // tslint:disable-next-line: max-line-length
-      image: "https://i.ibb.co/ZWBXznM/pp.jpg",
+      image: "https://i.ibb.co/k9C1VbK/87451332-798052107341463-4548458597977161728-o.jpg",
       description: "salut à tous",
       reddit: "https://www.reddit.com/user/CapiipaC",
       linkedin: "https://www.linkedin.com/in/s%C3%A9raphin-henry-22825b191/",
