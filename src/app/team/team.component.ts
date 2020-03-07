@@ -23,16 +23,18 @@ export class TeamComponent implements AfterViewInit {
         "https://api.whatsapp.com/send?phone=33649655776&text=Feel%20free%20to%20ask%20me%20anything%20:')",
       skills: {
         techSkills: [
-          "HTML/CSS",
           "JavaScript",
+          "Flutter",
           "React Native",
-          "MySQL",
-          "DynamoDB",
           "Angular",
-          "API REST",
-          "Swift",
+          "NodeJS",
+          "Python",
+          "Kotlin",
           "Cordova",
-          "Amazon Web Service"
+          "Amazon Web Services",
+          "MySQL/SQL",
+          "DynamoDB",
+          "API REST",
         ],
         management: ["Merise", "Management", "SCRUM", "UX Design"],
         hobbies: ["Musique et Production", "Ableton", "Nage sportive"]
@@ -55,6 +57,7 @@ export class TeamComponent implements AfterViewInit {
           "C#",
           ".NET",
           "Ranorex",
+          "Angular",
           "SQL",
           "DynamoDB",
           "Amazon Web Services"
@@ -114,6 +117,7 @@ export class TeamComponent implements AfterViewInit {
           "C++",
           "HTML/CSS",
           "JavaScript",
+          "Angular",
           "MySQL/SQL",
           "DynamoDB",
           "PHP",
