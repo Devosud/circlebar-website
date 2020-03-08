@@ -18,9 +18,9 @@ export class MenuBarComponent implements OnInit {
   public facebookLink = 'https://facebook.com';
   public linkedinLink = 'https://linkedin.fr';
   public googlePlay = require('../../assets/google-play.png');
-  public googlePlayLink = 'https://google.fr';
+  public googlePlayLink = 'https://play.google.com/store/apps/details?id=com.primitivo.circlebar';
   public appStore = require('../../assets/app-store.png');
-  public appStoreLink = 'https://apple.fr';
+  public appStoreLink = 'https://apps.apple.com/fr/app/circlebar/id1500311463?l=fr';
   public devOsudLink = 'https://me.dev-o-sud.fr';
 
   constructor(private router: Router, public i18nService: I18nService) {
