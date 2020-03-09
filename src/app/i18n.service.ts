@@ -18,7 +18,7 @@ export class I18nService {
       'ui.donate.paypal': 'Via Paypal',
       'ui.donate.patreon': 'Deviens un patron',
       'ui.first-look.title': 'CircleBar,',
-      'ui.first-look.description': 'le premier réseau social 100% bar',
+      'ui.first-look.description': 'le premier réseau social 100% bars',
       'ui.features.bar-selection.title': 'Une sélection unique',
       'ui.features.bar-selection.description': 'Accède à une large sélection de bars situés dans ta ville',
       'ui.features.promotions.title': 'Des promotions',
