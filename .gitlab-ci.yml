@@ -1,8 +1,5 @@
 image: trion/ng-cli
 
-include:
-  template: Dependency-Scanning.gitlab-ci.yml
-
 cache:
   untracked: true
   paths:
