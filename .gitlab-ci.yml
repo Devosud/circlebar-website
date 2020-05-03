@@ -1,5 +1,4 @@
-before_script:
-  - npm install
+image: trion/ng-cli
 
 cache:
   untracked: true
@@ -8,14 +7,13 @@ cache:
 
 stages:
   - build
-  - test
   - deploy
   
 
 build:
-  image: trion/ng-cli
   stage: build
   script:
+    - npm install
     - ng build --prod
   artifacts:
     paths:
@@ -24,19 +22,8 @@ build:
     - master
   tags:
     - nodeJS
-  
-test:
-  image: trion/ng-cli-karma
-  stage: test
-  script:
-    - ng test
-  only:
-    - master
-  tags:
-    - nodeJS
 
 deploy:
-  image: trion/ng-cli
   stage: deploy
   script:
     - npm i -g netlify-cli
