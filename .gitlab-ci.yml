@@ -1,5 +1,8 @@
 image: trion/ng-cli
 
+before_script:
+  - npm install
+
 cache:
   untracked: true
   paths:
