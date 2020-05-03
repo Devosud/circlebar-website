@@ -20,6 +20,8 @@ build:
       - dist
   only:
     - master
+  tags:
+    - nodeJS
   
 test:
   stage: test
@@ -27,6 +29,8 @@ test:
     - ng test
   only:
     - master
+  tags:
+    - nodeJS
 
 deploy:
   stage: deploy
@@ -37,3 +41,5 @@ deploy:
     - build
   only:
     - master
+  tags:
+    - nodeJS
