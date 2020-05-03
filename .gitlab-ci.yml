@@ -1,0 +1,39 @@
+image: trion/ng-cli
+
+cache:
+  untracked: true
+  paths:
+    - node_modules/
+
+stages:
+  - build
+  - test
+  - deploy
+  
+
+build:
+  stage: Build
+  script:
+    - ng build --prod
+  artifacts:
+    paths:
+      - dist
+  only:
+    - master
+  
+test:
+  stage: Test
+  script:
+    - ng test
+  only:
+    - master
+
+deploy:
+  stage: Deploy
+  script:
+    - npm i -g netlify-cli
+    - netlify deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_AUTH_TOKEN --prod
+  dependencies:
+    - build
+  only:
+    - master
