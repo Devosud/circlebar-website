@@ -12,7 +12,7 @@ stages:
   
 
 build:
-  stage: Build
+  stage: build
   script:
     - ng build --prod
   artifacts:
@@ -22,14 +22,14 @@ build:
     - master
   
 test:
-  stage: Test
+  stage: test
   script:
     - ng test
   only:
     - master
 
 deploy:
-  stage: Deploy
+  stage: deploy
   script:
     - npm i -g netlify-cli
     - netlify deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_AUTH_TOKEN --prod
