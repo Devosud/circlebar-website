@@ -15,9 +15,6 @@ build:
   script:
     - npm install
     - ng build --prod
-  artifacts:
-    paths:
-      - dist
   only:
     - master
   tags:
