@@ -1,5 +1,3 @@
-image: trion/ng-cli
-
 before_script:
   - npm install
 
@@ -15,6 +13,7 @@ stages:
   
 
 build:
+  image: trion/ng-cli
   stage: build
   script:
     - ng build --prod
@@ -27,6 +26,7 @@ build:
     - nodeJS
   
 test:
+  image: trion/ng-cli-karma
   stage: test
   script:
     - ng test
@@ -36,6 +36,7 @@ test:
     - nodeJS
 
 deploy:
+  image: trion/ng-cli
   stage: deploy
   script:
     - npm i -g netlify-cli
