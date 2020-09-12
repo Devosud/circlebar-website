@@ -14,8 +14,6 @@ jobs:
         uses: actions/setup-node@v1.4.3
         with:
           node-version: '12'
-      - name: 'Install Angular CLI'
-        run: npm i -g @angular/cli
       - name: 'Install Netlify CLI'
         run: npm i -g netlify-cli
       - name: 'Install dependencies'
