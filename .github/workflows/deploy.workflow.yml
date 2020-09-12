@@ -1,0 +1,26 @@
+name: Circlebar website - Build & Deploy
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build_deploy:
+    name: Build prod
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Checkout source code'
+        uses: actions/checkout@v2.3.2
+      - name: 'Set up Nodejs 12'
+        uses: actions/setup-node@v1.4.3
+        with:
+          node-version: '12'
+      - name: 'Install Angular CLI'
+        run: npm i -g @angular/cli
+      - name: 'Install Netlify CLI'
+        run: npm i -g netlify-cli
+      - name: 'Install dependencies'
+        run: npm install
+      - name: 'Build for production'
+        run: ng build --prod
+      - name: 'Deploy for production'
+        run : netlify deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_AUTH_TOKEN --prod
