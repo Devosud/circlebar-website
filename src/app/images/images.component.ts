@@ -22,7 +22,7 @@ export class ImagesComponent implements OnInit {
   constructor(public i18nService: I18nService) {
     this.imageNames = ['bar-info', 'bar-commu', 'bar-services',  'discover','account'];
     this.imageNames.forEach(element => {
-      this.images.push(require('../../assets/' + element + '.png'));
+      this.images.push('../../assets/' + element + '.png');
     });
   }
 

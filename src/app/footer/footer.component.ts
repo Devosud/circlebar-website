@@ -9,7 +9,7 @@ declare var require: any;
 })
 export class FooterComponent implements OnInit {
 
-  public primitivoLogo = require('../../assets/primitivo.png');
+  public primitivoLogo = '../../assets/primitivo.png';
   public facebookLink = 'https://fb.me/CircleBarApp';
   public linkedinLink = 'https://www.linkedin.com/company/primitivofr/';
   public primitivoLink = 'https://primitivo.fr';

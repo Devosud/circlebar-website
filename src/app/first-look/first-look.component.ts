@@ -10,9 +10,9 @@ declare var require: any;
 })
 export class FirstLookComponent implements AfterViewInit {
 
-  public googlePlay = require('../../assets/google-play.png');
-  public appStore = require('../../assets/app-store.png');
-  public firstImage = require('../../assets/first-page.png');
+  public googlePlay = '../../assets/google-play.png';
+  public appStore = '../../assets/app-store.png';
+  public firstImage = '../../assets/first-page.png';
 
   constructor(public i18nService: I18nService) {
     this.i18nService = i18nService;
