@@ -21,7 +21,7 @@ export class MenuBarComponent implements OnInit {
   public googlePlayLink = 'https://play.google.com/store/apps/details?id=com.primitivo.circlebar';
   public appStore = '../../assets/app-store.png';
   public appStoreLink = 'https://apps.apple.com/fr/app/circlebar/id1500311463?l=fr';
-  public devOsudLink = 'https://me.dev-o-sud.fr';
+  public copyrightLink = 'https://me.dev-o-sud.fr';
 
   constructor(private router: Router, public i18nService: I18nService) {
   }

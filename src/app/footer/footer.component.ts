@@ -13,7 +13,7 @@ export class FooterComponent implements OnInit {
   public facebookLink = 'https://fb.me/CircleBarApp';
   public linkedinLink = 'https://www.linkedin.com/company/primitivofr/';
   public primitivoLink = 'https://primitivo.fr';
-  public devOsudLink = 'https://me.dev-o-sud.fr';
+  public copyrightLink = 'https://me.dev-o-sud.fr';
 
   constructor(public i18nService: I18nService) { }
 
